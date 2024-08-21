@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #0a141d;
+    color: rgb(255, 255, 255);
+}
+/*------------------- SECCION CONTENEDOR DE ITEMS ------------------------*/
+.contenedor{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* oculto lo que queda fuera del .contenedor */
+    contain: paint;
+}
+
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:30px;
+    grid-row-gap: 30px;
+    /* width: 60%; */
+    width: 100%;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item{
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #00ccff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    background-color: #fff;
+}
+.contenedor .contenedor-items .item .img-item{
+    width: 100%;
+}
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000000;
+}
+.contenedor .contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+}
+
+.contenedor .contenedor-items .item .boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(250, 62, 0);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*---------------------------------producto.php---------------------------*/
+
+.producto {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.producto-1 {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.producto-1_1 {
+  flex: 1;
+  margin: 5px;
+  max-width: 100%; 
+}
+
+.producto-1_1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  max-width: 550px;
+  border-radius: 20px;
+  margin: 0 auto; 
+}
+
+/*---input cantidad-----*/
+.input {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgb(28, 28, 30);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: .4s;
+}
+
+.input:hover {
+    box-shadow: 0 0 0 3px rgba(135, 207, 235, 0.186);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 3px skyblue;
+}
+
+/*---boton agregar al carrito-----*/
+.btn {
+  background-color: #0bbe26;
+  padding: 14px 40px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .4s;
+  font-weight: bold;
+  width: 100%;
+}
+ 
+.btn span:last-child {
+  display: none;
+}
+ 
+.btn:hover {
+  transition: .4s;
+  background-color: #fff;
+  color: #f76700;
+}
+ 
+.btn:active {
+  background-color: #87dbd0;
+}
+ 
+.proximo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.linea {
+  flex: 1;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.299), transparent);
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .producto-1 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .producto-1_1 {
+      text-align: center;
+  }
+
+  .producto-1_1 img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,142 @@
+body {
+    background-color: #0a141d;
+    color: rgb(255, 255, 255);
+}
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.seccion-0 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.seccion-0 img {
+    width: 80%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.seccion-0 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px; 
+    font-weight: bold; 
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.242), 
+                 0 0 10px rgba(255, 255, 255, 0.264), 
+                 0 0 20px rgba(255, 255, 255, 0.286), 
+                 0 0 40px rgba(255, 255, 255, 0.248),
+                 0 0 80px rgba(255, 255, 255, 0.193);
+}
+
+.seccion-1 {
+    text-align: center;
+}
+
+.seccion-1 h1 {
+    margin-bottom: 20px;
+}
+
+.seccion-1 p {
+    max-width: auto; 
+    word-wrap: break-word; 
+    text-align: center; 
+    margin-bottom: 50px;
+    
+    
+}
+
+.seccion-3 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 40px; 
+    
+}
+
+.seccion-3_1 {
+    flex-basis: 40%; 
+}
+
+.seccion-3_11 {
+    flex-basis: 40%; 
+}
+
+.seccion-3_2 {
+    background-color: rgba(219, 203, 195, 0.233);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.seccion-3_2 h1 {
+    margin-bottom: 100px;
+}
+
+.seccion-3_2 p {
+    margin-bottom: 80px;
+}
+
+.seccion-4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.seccion-4 button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.seccion-4 button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.seccion-4 button:active {
+    transform: translateY(-1px);
+}
+
+.seccion-5 h1 {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .seccion-3 {
+        flex-direction: column; /* Mostrar los elementos en columna */
+    }
+
+    .seccion-3_1 {
+        width: 100%;
+    }
+
+    .seccion-3_11 {
+        width: 100%;
+    }
+
+    .seccion-0 img {
+        width: 100%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+}
+h1 {
+    color: rgb(255, 77, 0);
+    font-size: 30px;
+}
+p {
+    color: #666;
+    font-size: 17px;
+}
+#enlace-pagina {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0bbe26;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#enlace-pagina:hover {
+    background-color: #09a124;
+}
+.linea {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.table-responsive {
+    width: 100%; 
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    text-align: center; 
+    
+}
+
+th, td {
+    padding: 8px; 
+    border-bottom: 1px solid #747474; 
+}

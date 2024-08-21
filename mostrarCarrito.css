@@ -1,0 +1,124 @@
+body {
+    background-color: #0a141d;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+.contenedor {
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+.seccion-1 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.table-responsive {
+    width: 100%; 
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    text-align: center; 
+    
+}
+
+th, td {
+    padding: 8px; 
+    border-bottom: 1px solid #747474; 
+}
+
+/*---input correo-----*/
+.input {
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(28, 28, 30);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px; 
+    transition: .4s;
+}
+  
+.input:hover {
+      box-shadow: 0 0 0 3px rgba(135, 207, 235, 0.186);
+}
+  
+.input:focus {
+      box-shadow: 0 0 0 3px skyblue;
+}
+
+/*----boton proceder a pagar---------*/
+.cssbuttons-io-button {
+    background: #0fc405;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #134001;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    width: 300px;
+    cursor: pointer;
+}
+  
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #11bb02;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+  
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+  
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #0bc405;
+}
+  
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+  
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+  

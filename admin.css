@@ -1,0 +1,233 @@
+body {
+    background-color: #0a141d;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-padre {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+.contenedor-input {
+    width: 45%; 
+    margin-right: 10px; 
+}
+
+/* Estilo para los inputs */
+.input {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(28, 28, 30);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+.input:hover {
+    box-shadow: 0 0 0 3px rgba(135, 207, 235, 0.186);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 3px skyblue;
+}
+
+/* boton editar */
+
+.Btn-editar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(3, 224, 21);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: .3s;
+}
+  
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+}
+  
+.Btn-editar:hover {
+    color: transparent;
+}
+  
+.Btn-editar:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #747474;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.btn-accion {
+    /* Eliminar bordes, relleno y estilos por defecto */
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* Estilo para los botones */
+.btn {
+    background-color: #0bbe26;
+    padding: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #f76700;
+}
+
+/* Estilo para el boton cancelar */
+.btn-cancelar {
+    background-color: #d00505;
+    padding: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-cancelar:hover {
+    background-color: #fff;
+    color: #f76700;
+}
+
+.custum-file-upload {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #e8e8e8;
+    background-color: #212121;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+  
+.custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.custum-file-upload .icon svg {
+    height: 80px;
+    fill: #e8e8e8;
+}
+  
+.custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.custum-file-upload .text span {
+    font-weight: 400;
+    color: #e8e8e8;
+}
+  
+.custum-file-upload input {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

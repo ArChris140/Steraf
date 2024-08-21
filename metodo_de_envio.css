@@ -1,0 +1,133 @@
+body{
+    background-color: #0a141d;
+    color: rgb(255, 255, 255);
+}
+
+.contenedor {
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+.seccion-0 {
+    text-align: center;
+}
+
+.seccion-0 h1 {
+    font-size: 50px;
+    margin-bottom: 20px; 
+}
+
+.seccion-0 p {
+    font-size: 30px;
+    margin-bottom: 20px; 
+}
+
+.seccion-1 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.seccion-1_1 {
+    flex: 1;
+    margin: 5px;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.seccion-1_1 h1 {
+    font-size: 1.6em;    
+    width: 80%;          
+    margin: 0 auto;      
+    padding: 20px;       
+    line-height: 1.5;    
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
+}
+
+.seccion-1_1 p {
+    font-size: 1.2em;    
+    width: 80%;          
+    margin: 0 auto;      
+    padding: 20px;       
+    line-height: 1.5;    
+    text-align: justify; 
+}
+
+
+
+.seccion-1_1 img {
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    width: 500px; 
+}
+
+@media screen and (max-width: 720px) {
+    .seccion-1 {
+        flex-direction: column;
+    }
+    .seccion-1_1 img {
+        max-width: 100%;
+        max-height: 370px;
+    }
+}
+
+.seccion-2 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion-2_1 {
+    flex: 1;
+    margin: 5px;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.seccion-2_1 h1 {
+    font-size: 1.6em;    
+    width: 80%;          
+    margin: 0 auto;      
+    padding: 20px;       
+    line-height: 1.5;    
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+}
+
+.seccion-2_1 p {
+    font-size: 1.2em;    
+    width: 80%;          
+    margin: 0 auto;      
+    padding: 20px;       
+    line-height: 1.5;    
+    text-align: justify; 
+}
+
+
+
+.seccion-2_1 img {
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 20px;
+    width: 500px; 
+}
+
+@media screen and (max-width: 720px) {
+    .seccion-2 {
+        flex-direction: column;
+    }
+    .seccion-2_1 img {
+        max-width: 100%;
+        max-height: 370px;
+    }
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #0a141d;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 80%;
+    margin: 100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seccion {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para los inputs */
+.input {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(28, 28, 30);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: .4s;
+}
+
+.input:hover {
+    box-shadow: 0 0 0 3px rgba(135, 207, 235, 0.186);
+}
+
+.input:focus {
+    box-shadow: 0 0 0 3px skyblue;
+}
+
+.contenedor-padre {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.contenedor-input {
+    width: 45%; 
+    margin-right: 10px; 
+}
+
+/* Estilo para los botones */
+.btn {
+    background-color: #0bbe26;
+    padding: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #f76700;
+}
+
+/* Estilo para el boton cancelar */
+.btn-cancelar {
+    background-color: #d00505;
+    padding: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-cancelar:hover {
+    background-color: #fff;
+    color: #f76700;
+}
+
+.table-responsive {
+    width: 100%; 
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    text-align: center; 
+    
+}
+
+th, td {
+    padding: 8px; 
+    border-bottom: 1px solid #747474; 
+}
+
+.boleta {
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
